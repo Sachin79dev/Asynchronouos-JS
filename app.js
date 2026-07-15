@@ -316,3 +316,35 @@ console.log("End");
 // Promise 1
 // Promise 2
 // Timeout
+
+
+
+
+
+
+
+
+
+
+
+// Calling API using fetch
+
+const fetchData = async () => {
+  try {
+    const res = await fetch("https://fakestoreapi.com/products");
+    if (!res.ok) {
+      throw new Error("Response Not Recieved!!!");
+    }
+
+    const data = await res.json();
+
+    console.log(data);
+    
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+
+
+fetchData() // it will print whole API Data 
