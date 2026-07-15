@@ -156,3 +156,37 @@ promise.catch((val) => {
 
 
 
+
+
+// Question 9 — Promise Chaining
+
+function addTen(num) {
+  return new Promise((resolve) => {
+    resolve(num + 10);
+  });
+}
+
+addTen(0)
+  .then((val) => {
+    console.log(val);
+    return addTen(val);
+  })
+  .then((val) => {
+    console.log(val);
+    return addTen(val);
+  })
+  .then((val) => {
+    console.log(val);
+    return addTen(val);
+  });
+
+
+
+
+
+
+
+
+
+
+
