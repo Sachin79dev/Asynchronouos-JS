@@ -24,3 +24,27 @@ function welcome(callback) {
 }
 
 console.log(welcome(greet)); // Hello Sachin
+
+
+
+
+
+
+
+
+// Question 3 — setTimeout with Arguments
+
+function greet(name) {
+  console.log(`Hello ${name}`);
+}
+
+setTimeout(() => {
+  greet("Sachin"); // Hello Sachin
+}, 1000);
+
+
+
+
+
+
+
