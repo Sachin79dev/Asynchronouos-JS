@@ -120,3 +120,27 @@ fetchUser((value) => {
 
 
 
+// Question 7 — Create Your First Promise
+
+
+const promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("Data Received")
+    }, 2000)
+})
+
+
+promise.then((value) => {
+    console.log(value); // Data Received will print after 2 seconds
+})
+
+
+
+
+
+
+
+
+
+
+
