@@ -91,4 +91,32 @@ const timer = setInterval(() => {
 
 
 
+// Question 6 — Fake API Call
+
+const fetchUser = (callback) => {
+  console.log("Fetching User...");
+  setTimeout(() => {
+    let user = {
+      id: 1,
+      name: "Ritik",
+    };
+
+    callback(user) 
+  }, 2000);
+};
+
+
+
+fetchUser((value) => {
+    console.log(value);
+})
+
+
+
+
+
+
+
+
+
 
