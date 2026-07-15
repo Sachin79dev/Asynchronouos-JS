@@ -140,6 +140,18 @@ promise.then((value) => {
 
 
 
+// Question 8 — Promise Rejection
+
+const promise = new Promise((resolve, reject) => {
+  reject("Server Down");
+});
+
+promise.catch((val) => {
+  console.log(val);
+});
+
+
+
 
 
 
