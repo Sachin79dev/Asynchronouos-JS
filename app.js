@@ -48,3 +48,22 @@ setTimeout(() => {
 
 
 
+// Question 4 — Stop a Timer
+
+
+
+const timer = setTimeout(() => {
+    console.log("Hello 3.0");
+    
+}, 5000)
+
+
+clearTimeout(timer) // Nothing should print.
+
+
+
+
+
+
+
+
