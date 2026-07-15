@@ -190,3 +190,48 @@ addTen(0)
 
 
 
+// Question 10 — Async/Await Conversion
+
+function fetchData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      reject("Data Received");
+    }, 2000);
+  });
+}
+
+
+
+fetchData()
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+
+
+
+const getData = async () => {
+    try {
+        const data = await fetchData()
+        console.log(data);
+        
+    } catch (error) {
+        console.log(error);
+        
+    }
+}
+
+
+getData()
+
+
+
+
+
+
+
+
+
+
