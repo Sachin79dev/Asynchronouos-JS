@@ -262,3 +262,32 @@ console.log("D");
 
 
 
+// Question 12 — Fetch + JSON (Mini Project)
+
+
+const getData = async () => {
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users/1");
+
+    if (!response.ok) {
+      throw new Error("Response Error");
+    }
+
+    const data = await response.json()
+
+    console.log(data.name); // Leanne Graham
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+getData();
+
+
+
+
+
+
+
+
+
